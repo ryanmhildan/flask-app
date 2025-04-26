@@ -2,6 +2,9 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/", methods=['GET'])
 def home():
-    return "Halo, ini aplikasi Flask kamu di Render!"
+    return "<h1>komawan PaaS</h1>"
+
+if __name__= "__main__":
+    app.run()
